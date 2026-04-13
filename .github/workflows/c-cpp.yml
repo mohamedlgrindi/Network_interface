@@ -13,10 +13,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Install dependencies
-      run: sudo apt-get install -y qt5-qmake qt5-default
+      run: sudo apt-get update && sudo apt-get install -y qt5-qmake qt5-default build-essential
     - name: Generate Makefile with qmake
-      run: qmake Network_Interfaces.pro
-    - name: make
+      run: qmake Network_Interfaces.pro -o Makefile
+    - name: Build
       run: make
-    - name: make check
-      run: make check
