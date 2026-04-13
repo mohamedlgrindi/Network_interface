@@ -37,7 +37,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->editSubnet->setFont(bigFont);
     ui->comboInterface->setFont(bigFont);
     ui->comboActivateDeactivate->setFont(bigFont);
-
+     // Button styling
     // Button styling
     QFont buttonFont;
     buttonFont.setPointSize(12);
