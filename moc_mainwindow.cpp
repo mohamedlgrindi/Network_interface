@@ -39,6 +39,7 @@ QT_MOC_LITERAL(3, 32, 22), // "on_btnActivate_clicked"
 QT_MOC_LITERAL(4, 55, 24), // "on_btnDeactivate_clicked"
 QT_MOC_LITERAL(5, 80, 21), // "loadNetworkInterfaces"
 QT_MOC_LITERAL(6, 102, 20) // "refreshInterfaceInfo"
+QT_MOC_LITERAL(6, 100, 30) // "refreshInterfaceInfo"
 
     },
     "MainWindow\0on_btnApply_clicked\0\0"
