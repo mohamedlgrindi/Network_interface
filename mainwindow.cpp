@@ -12,7 +12,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
+ // Button styling
     // ===== UI STYLING =====
     this->resize(1200, 800); // Larger window size
 
