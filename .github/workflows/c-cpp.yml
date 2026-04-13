@@ -9,12 +9,12 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
     - uses: actions/checkout@v4
     - name: Install dependencies
-      run: sudo apt-get update && sudo apt-get install -y qt5-qmake qt5-default build-essential
-    - name: Generate Makefile with qmake
-      run: qmake Network_Interfaces.pro -o Makefile
+      run: sudo apt-get update && sudo apt-get install -y cmake qtbase5-dev build-essential
+    - name: Configure with CMake
+      run: cmake -B build -DCMAKE_BUILD_TYPE=Release
     - name: Build
-      run: make
+      run: cmake --build build
